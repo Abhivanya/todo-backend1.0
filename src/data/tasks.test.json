@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Sample Task",
+    "description": "This is a sample task",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Sample Task 2",
+    "description": "This is a sample task 2",
+    "completed": false
+  }
+]

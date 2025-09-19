@@ -1,7 +1,7 @@
 {
   "name": "todo",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": " nodemon src/app.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
