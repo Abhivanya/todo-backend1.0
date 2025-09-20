@@ -1,6 +1,6 @@
-const express = require("express");
-const taskRoutes = require("./routes/taskRoutes");
-const morgan = require("morgan");
+import express from "express";
+import taskRoutes from "./routes/taskRoutes.js";
+import morgan from "morgan";
 
 const app = express();
 
@@ -15,4 +15,4 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-module.exports = app;
+export default app;

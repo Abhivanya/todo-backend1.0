@@ -1,6 +1,10 @@
-const router = require("express").Router();
-const { getAllTasks } = require("../controller/taskController.js");
+import express from "express";
+import { requestDataValidator } from "../middelwares/requestValidator.js";
+const router = express.Router();
+
+import { getAllTasks, addTask } from "../controller/taskController.js";
 
 router.get("/tasks", getAllTasks);
+router.post("/tasks", requestDataValidator, addTask);
 
-module.exports = router;
+export default router;
